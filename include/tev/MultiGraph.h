@@ -62,6 +62,7 @@ protected:
     Eigen::MatrixXf mValues;
     float mMinimum = 0, mMean = 0, mMaximum = 0;
     int mZeroBin = 0;
+
 public:
     EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };

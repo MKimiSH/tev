@@ -41,14 +41,17 @@ public:
     void setData(const std::vector<float>& data, const Eigen::Vector2i& size, int numChannels);
 
 private:
+    Eigen::Vector2i mSize = Eigen::Vector2i::Constant(0);
+    std::vector<float> mData;
+    int mNumChannels = 0;
+
     GLuint mId = 0;
     GLint mClamping;
     GLint mFiltering;
     bool mMipmap;
 
-    Eigen::Vector2i mSize = Eigen::Vector2i::Constant(0);
-    int mNumChannels = 0;
-    std::vector<float> mData;
+public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 
 TEV_NAMESPACE_END

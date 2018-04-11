@@ -71,6 +71,9 @@ private:
     GlTexture mColorMap;
 
     nanogui::Color mBackgroundColor = nanogui::Color(0, 0, 0, 0);
+
+public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 
 TEV_NAMESPACE_END

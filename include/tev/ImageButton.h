@@ -71,6 +71,9 @@ private:
 
     size_t mHighlightBegin = 0;
     size_t mHighlightEnd = 0;
+
+public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 
 TEV_NAMESPACE_END

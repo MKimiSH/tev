@@ -150,6 +150,9 @@ private:
 
     std::map<std::string, std::shared_ptr<Lazy<std::shared_ptr<CanvasStatistics>>>> mMeanValues;
     ThreadPool mMeanValueThreadPool;
+
+public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 
 TEV_NAMESPACE_END

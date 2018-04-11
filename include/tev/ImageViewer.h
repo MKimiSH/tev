@@ -197,6 +197,9 @@ private:
 
     bool mIsDraggingSidebar = false;
     bool mIsDraggingImage = false;
+
+public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
 
 TEV_NAMESPACE_END
