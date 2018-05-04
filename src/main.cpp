@@ -20,7 +20,7 @@ using namespace std;
 
 TEV_NAMESPACE_BEGIN
 
-int mainFunc(const vector<string>& arguments) {
+int main(const vector<string>& arguments) {
     ArgumentParser parser{
         "tev — The EXR Viewer\n"
         "version " TEV_VERSION "\n"
@@ -254,7 +254,7 @@ int main(int argc, char* argv[]) {
 #endif
         }
 
-        tev::mainFunc(arguments);
+        tev::main(arguments);
     } catch (const exception& e) {
         cerr << tfm::format("Uncaught exception: %s", e.what()) << endl;
         return 1;
